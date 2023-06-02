@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools { 
-        maven 'maven-3.6.3' 
+        maven 'maven-3.8.6' 
     }
     stages {
         stage('Checkout git') {
             steps {
-               git branch: 'main', url: 'https://github.com/kannavardhan/DevSecOps_Project.git'
+               git branch: 'main', url: 'https://github.com/logicopslab/java-web-app'
             }
         }
         
